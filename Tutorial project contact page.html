@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>
+    www.httpsWebDevTutorirals.org/contact.page
+</title>
+<style>
+
+/*the .mainframe class is to display the flex column, background color, margin, hides the horizontal scroll button and adjust
+the the .box 1,2, and 3 classes below*/
+.mainframe {display: flex; flex-direction: column; background-color: white; overflow-x: hidden; margin: 0px;}
+
+/*the .box1 classs is to display the background as well to ajust the height, width and margin*/
+.box1 {background: linear-gradient(lime, black, black); height: 125px; width: 1359px; margin: 0px 0px 0px 0px;}
+
+/*the .home class is to adjust the text alignment, font, positio, margin, opacity when the user points the cursor on the 
+home button from line 18 to 21*/
+.home {text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px; color: lime;  position: relative; bottom: 1em;
+left: 29em; font-weight: bold; margin: auto}
+
+.home:hover {opacity: 0.6;}
+
+/*the h2 elemeent to adjust the text, font, and the postion*/
+h2 {text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px; color: lime; position: relative; bottom: 0.9em;
+right: 2.5em;}
+
+/*the .box2 class is to adjust the background color, height, width, and the margin as well*/
+.box2 {background-color: black; height: 875px; width: 1359px; margin: 0px 0px 0px 0px; }  
+
+/*the .green and .green2 classes is to adjust the border radius, position, width and the height from line 31 and 32*/
+.green {border-radius: 5px; position: relative; right: 0em; bottom: 0em; width: 27.25em; height: 54.63em;}
+.green2 {border-radius: 5px; position: relative; left: 23.8em; bottom: 0em; width: 31.5em; height: 54.63em;}
+
+/*the #first ID and .first class is to adjust the position, font, background, border, and the width as well from line 35 to 39*/
+#first {position: relative; bottom: 38em; left: 24.5em; 
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bolder; font-size: 20px; color: lime;}
+.first {background-color: black; border-color: lime; width: 16em; font-size: 17.5px; 
+font-family: Verdana, Geneva, Tahoma, sans-serif; color: lime;}
+
+/*the #last ID and .last class is to adjust the position, font, background, border, and the width as well from line 42 to 46*/
+#last {position: relative; bottom: 36em; left: 24.5em;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bolder; font-size: 20px; color: lime;}
+.last {background-color: black; border-color: lime; width: 16em; font-size: 17.5px; 
+font-family: Verdana, Geneva, Tahoma, sans-serif; color: lime;}
+
+/*the #email ID and .email class is to adjust the font, background, border, and the width as well from line 50 to 53*/
+#email {position: relative; bottom: 34em; left: 24.5em;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bolder; font-size: 20px; color: lime;}
+.email {background-color: black; border-color: lime; width: 16em; font-size: 17.5px; 
+font-family: Verdana, Geneva, Tahoma, sans-serif; color: lime; }
+
+/*the .message class is to adjust the adjust the position and the font*/
+.message {position: relative; bottom: 32.5em; left: 24.5em; 
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bolder; font-size: 20px; font-weight: bolder; color: lime;}
+
+/*the #text ID is to adjust the background, border, position, font, and the color as well*/
+#text {background-color: black; border-color: lime; position: relative; bottom: 42.75em; left: 29.5em; font-size: 15.5px;
+font-family: Verdana, Geneva, Tahoma, sans-serif; color: lime;}
+
+/*the .send class is to adjust the background, border, position, padding, color, font and the opacity when the user points the cursor on the 
+send button from line 66 to 70*/
+.send {background-color: black; border-style: solid; border-color: lime; position: relative; bottom: 30.5em; left: 29em; 
+ padding: 10px 10px 10px 10px; border-radius: 7.5px; color: lime; font-weight: bolder; font-size: 20px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+.send:hover {opacity: 0.6;}
+
+/*the .box3 class is to adjust the background, height and to display the h4 element*/
+.box3 {background: linear-gradient(black,  black, lime); height: 483px; width: 1359px;}
+
+/*the h4 element is to adjust the djust the position, text and the font as well*/
+ h4{position: relative; top: 75px; text-align: center; font-size: 20px; 
+ font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; color: lime;}
+
+/*the @media below is to display the view and to ajusth mostly the positon in a mobile version from line 80 to 111*/
+@media (max-width: 500px) and (min-width: 320px)
+{
+    /*the .mainframe class is to adjust the width and height*/
+    .mainframe {width: 483px; height: 700px;}
+
+    /*the .box1 class is to adjust the width*/
+    .box1 {width: 483px;}
+
+    /*the .home class is to adjust the postition*/
+    .home {position: relative; left: 200px; top: -20px;}
+
+    /*the h2 element is to adjust the width and the postion*/
+    h2 {width: 483px; position: relative; bottom: 10px; right: 10px; font-size: 17.5px;}
+
+    /*the .box2 class is to adjust the wdith and the padding alignment*/
+    .box2 {width: 483px; padding-bottom: 100px;}
+
+    /*the .green and green2 classes is to adjust the width and the height from line 98 to 100*/
+    .green {width: 0em; height: 0em;}
+
+    .green2 {width: 0em; height: 0em;}
+
+    /*the the IDs below is to adjust the postion from line 103 to 107*/
+    #first {top: 10px; left: 100px;}
+
+    #last {top: 20px; left: 100px;}
+
+    #email {top: 30px; left: 100px;}
+
+    /*the .message class is to adjust the position*/
+    .message {top: 40px; left: 100px;}
+
+    /*the #text ID is to adjust the position*/
+    #text {position: relative; top: 30px; left: 100px;}
+
+    /*the .send class is to adjust the position*/
+    .send {position: relative; top: 50px; left: 200px;}
+
+    /*the .box3 class is to adjust the width and the padding*/ 
+    .box3 {width: 483px; padding-bottom: 75px;}
+
+    /*the h4 element is to adjust the position*/
+    h4 {position: relative; top: 0px;}
+}
+
+/*the @media below is to display the view of a tablet from line 126 to 143*/
+@media (min-width: 501px) and (max-width: 1024px)
+{
+    /*the .home class is to adjusth the text and positon*/
+    .home{text-align: center; position: relative; top: -20px; left: 480px;}
+
+    /*the h2 element is to adjust the postion and font*/
+    h2 {position: relative; bottom: 10px; right: 170px; font-size: 17.5px;}
+
+    /*the green and green2 classes is to adjust the width height and the position as well from line 135 and 136*/
+    .green {width: 20.5em; height: 54.63em; position: relative; left: 0em;}
+    .green2 {width: 31.5em; height: 54.63em; position: relative; left: 23.8em;}
+    
+    /*the IDs and classes belw is to adjust the position from line 139 to 144*/
+    #first {position: relative; bottom: 39em; left: 19em;}
+    #last {position: relative; bottom: 37em; left: 19em;}
+    #email {position: relative; bottom: 35em; left: 19em;}
+    .message {position: relative; bottom: 33em; left: 19em;}
+    #text {position: relative; bottom: 43.5em; left: 22.5em;}
+    .send {position: relative; bottom: 32em; left: 24em}
+
+    /*the h4 element is to adjust the postion, font and the letter spacing as well*/
+    h4 {position: relative; top: 5em; right: 10.5em; font-size: 17.5px; letter-spacing: -0.25px;}
+}
+</style>
+
+<!--cdeclaring a mainframe class to display the the top, middle and the bottom box-->
+<body class="mainframe">
+
+    <!--here is to display the top box and helps the user click to another webpage from line 155 to 158-->
+     <div class="box1"><br>
+       <p><a href="file:///H:/Computer%20programs/HTML%20FILES/Tutorial%20project.html" class="home">Home</a></p>
+        <h2>If you like to contact us please send us your name, email, and write the message below. </h2>
+    </div>
+
+    <!--this helps to display the middle box, images, and the infromation for the user input from line 161 to 189-->
+     <main class="box2">
+
+        <img class="green" src= https://i.pinimg.com/236x/91/e7/ac/91e7ac5427ffc4476d7761e1582d0b1b--green-colors-languages.jpg>
+        <img class="green2" src= https://i.pinimg.com/236x/91/e7/ac/91e7ac5427ffc4476d7761e1582d0b1b--green-colors-languages.jpg>
+
+    <!--here is for the user to input thier information below such as first, last name, email, and message from line
+    168 to 184-->
+         <form action="First name" id= "first">
+             First Name <br>
+             <input type="text" class="first" name="first">
+        </form>
+
+        <form action="Last name" id="last">
+            Last Name <br>
+            <input type="text" class="last" name="last">
+        </form>
+        
+        <form action="Email" id="email">
+            Email <br>
+            <input type="email" class="email" name="email">
+        </form>
+
+        <p class="message">Message</p>
+        <textarea name="text" id="text" cols="35" rows="10"></textarea>
+
+        <!--here is for the user to click the send button below and link them to anothre webpage-->
+           <br><br> <a href="file:///H:/Computer%20programs/HTML%20FILES/future%20page.html" style= "text-decoration:none" 
+            class="send">Send</a>
+    </main>
+
+    <!--This is to provide the infomation to contact us-->
+     <div class="box3"><h4> If you want more information please call us at <u>956-606-0219</u> for any other questions you have.</h4></div>
+</body>
+
+<!--end of program-->
+</html>

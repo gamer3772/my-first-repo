@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<link  rel="stylesheet" type= "text/css" href="mystyle.css" >
+<title>
+www.https//WebDevTutorials.org
+</title>
+
+<style>
+/*the overflow is for the user will not be able to scroll the x-axis*/
+body {overflow-x: hidden;}
+
+/*This is to create a background linear gradinet color and its degree alingment*/
+.cool { background:linear-gradient( 45deg, orange, lightgreen, hsl(200, 100%, 50%)); padding-top: 10px; margin-top: -10px;
+padding-left: 10px; margin-left: -10px; margin-right: -10px;} 
+
+/*this is to align the flex box for the "about us and contact us" IDs for position alignment, font-style and position alignment
+from line 18 to 27*/
+#button {display: flex; flex-direction: row; width: 200px; height: 75px; position: relative; top: 15px; left: 20px;
+justify-content: center;}
+
+#about-us {background-color: darkcyan; width: 95px; height: 50px; border-radius: 10px; margin: 0px 15px 0px 0px; text-align: center; 
+font-family: Verdana, Geneva, Tahoma, sans-serif; color: whitesmoke;}
+#about-us:hover{background-color: orange;}
+
+#contact-us{background-color: darkcyan; width: 95px; height: 50px; border-radius: 10px; margin: 0px 0px 0px 0px; text-align: center; 
+font-family: Verdana, Geneva, Tahoma, sans-serif; color: whitesmoke;}
+#contact-us:hover{background-color: orange;}
+
+/*the ".welcome" class is to align its postion, font-style and its color as well*/
+.welcome {width: 1200px; position: relative; left: 50px; font-family: Arial; font-size: 35px; color: red; text-align: center; margin-top: 10px; 
+text-transform: capitalize;}
+
+/*the .webdevpic class is to create the width, margin, borders styles, and make it hover when the curor is on the 3 pictures from
+line 34 to 47*/
+
+.webdevpic {position: relative; left: 175px;}
+
+.webdevpic1 {width: 300px; height: 175px; position: relative; right: 30px; border-radius: 10px; border-style: solid; border-color: yellowgreen;
+border-width: 5px;}
+.webdevpic1:hover {transform: scale(1.2);}
+
+.webdevpic2 {width: 300px; height: 175px; border-radius: 10px; border-style: solid; border-color: yellowgreen;
+border-width: 5px;}
+.webdevpic2:hover {transform: scale(1.2);}
+
+.webdevpic3 {width: 325.5px; height: 175px; position: relative; left: 30px; border-radius: 10px; border-style: solid; border-color: yellowgreen;
+border-width: 5px;}
+.webdevpic3:hover {transform: scale(1.2);}
+
+/*the h2 element is to create the background, border, margins,fonts, and aligment and display it*/
+h2  {width: 700px; position: relative; left: 300px; background-color: rgba(238, 241, 41, 0.5); border-radius: 50px; padding: 10px; 
+text-align: center; font-family: arial; color: red; font-size: 23.5px; text-transform: capitalize;}
+
+/*hr is to divides the line between the ".member" class and the "h2"*/
+hr {background-color: black; border-style: solid; width: 1200px; position: relative; left: 0px;}
+
+/*the .member class is to move the positons, adjust the font and the text as well*/
+.member {position: relative; left: 15px; font-size: 17.5px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-transform: capitalize;}
+
+/* the. backgnd class is to create a small rectangle to dipslay the login area such as email, password, and a login button
+from line 61 to 69*/ 
+.backgnd {background-color: rgb(132, 204, 245); width: 250px; height: 140px; padding-left: 10px; border-radius: 20px; 
+position: relative; left: 13px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px;}
+
+.Email {position: relative; top: 10px}
+
+.pwd {position: relative; top: 10px;}
+
+.login {background-color: mediumspringgreen; border-style: none; }
+.login:hover {background-color: orange;}
+
+/*the .b4vid class is to display the font and aduust the postiion*/
+.b4vid{font-size: 17.5px; font-family: Verdana; position: relative; top: 15px; left: 15px; text-transform: capitalize;}
+
+/*the vdieo class is to adjust the postion and the border as well*/
+.video{position: relative; left: 30px; top: 5px; border-radius: 10px;}
+
+/*the classes below is to display the coding symbol and black background as well as adjusting the position, width, height and the rest of
+its code as well from line 71 to 91  from top 745 to bottom 245 and left 745 to */
+.symbol-top{background-color: white; position: absolute; top: 745px; right: 0px; left: 750px; width:50px; height: 12.5px;
+transform: rotate(-15deg) skewX(-15deg) skewY(-15deg); animation-duration: 0.9s; animation-iteration-count: infinite; 
+animation-name: greater-than;}
+
+.symbol-bot {background-color: white; position: absolute; top: 775px; right: 0px; left: 750px; width:50px; height: 12.5px; 
+transform: rotate(15deg) skewX(15deg) skewY(15deg); animation-duration: 0.9s; animation-iteration-count: infinite; 
+animation-name: greater-than2;}
+
+.symbol-mid {background-color: white; position: absolute; top: 760px; right: 0px; left: 800px;  width:50px; height: 12.5px;
+transform: rotate(105deg) skewX(15deg) skewY(15deg); animation-duration: 1s; animation-iteration-count: infinite; 
+animation-name: forwardslash;}
+
+.symbol-top2 {background-color: white; position: absolute; top: 745px; right: 0px; left: 850px;  width:50px; height: 12.5px;
+transform: rotate(15deg) skewX(15deg) skewY(15deg); animation-duration: 1.1s; animation-iteration-count: infinite; 
+animation-name: less-than;}
+
+.symbol-bot2 {background-color: white; position: absolute; top: 775px; right: 0px; left: 850px; width:50px; height: 12.5px; 
+transform: rotate(-15deg) skewX(-15deg) skewY(-15deg); animation-duration: 1.1s; animation-iteration-count: infinite; 
+animation-name: less-than2;}
+
+.space {background-color: black; width: 300px; height: 300px; position: absolute; top: 625px; left: 680px; border-radius: 50%;}
+
+/*using the keyframes is to create the hearbeat animation for the classes above from line 94 to 107*/
+@keyframes greater-than{0%{transform: scale(1) rotate(-15deg) skewX(-15deg) skewY(-15deg);} 
+50% {transform: scale(0.9) rotate(-15deg) skewX(-15deg) skewY(-15deg);}}
+
+@keyframes greater-than2{ 0%{transform: scale(1) rotate(15deg) skewX(15deg) skewY(15deg);} 
+50% {transform: scale(0.9) rotate(15deg) skewX(15deg) skewY(15deg);}}
+
+@keyframes forwardslash { 0%{transform: scale(1) rotate(105deg) skewX(15deg) skewY(15deg);}
+50%{transform: scale(0.9) rotate(105deg) skewX(15deg) skewY(15deg)}}
+
+@keyframes less-than { 0%{transform: scale(1) rotate(15deg) skewX(15deg) skewY(15deg)}
+50%{transform: scale(0.9) rotate(15deg) skewX(15deg) skewY(15deg)}}
+
+@keyframes less-than2 { 0%{transform: scale(1) rotate(-15deg) skewX(-15deg) skewY(-15deg);}
+50%{transform: scale(0.9) rotate(-15deg) skewX(-15deg) skewY(-15deg);}}
+ 
+ /*these classes below is to display the 8 colored balls from line 118 to 127*/
+.round {width:25px; height: 25px; border-radius: 50%; animation-iteration-count: infinite; position: absolute; 
+animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: linear;}
+.ball1 {background-color: yellow; position: absolute; top: 660px; right: 0px; left: 815px; animation-name: around1;}   
+.ball2 {background-color: violet; position: absolute; top: 860px; right: 0px; left: 815px; animation-name: around2;}
+.ball3 {background-color: teal; position: absolute; top: 760px; right: 0px; left: 945px; animation-name: around3;}
+.ball4 {background-color: orangered; position: absolute; top: 760px; right: 0px; left: 685px; animation-name: around4;}
+.ball5 {background-color: green;position: absolute; top: 685px; right: 0px; left: 905px; animation-name: around5;}
+.ball6 {background-color: red; position: absolute; top: 835px; right: 0px; left: 725px; animation-name: around6;}
+.ball7 {background-color: orange; position: absolute; top: 685px; right: 0px; left: 725px; animation-name: around7;}
+.ball8 {background-color: blue; position: absolute; top: 835px; right: 0px; left: 905px; animation-name: around8;}
+
+/*using the keyframes is to create the circle animation for the classes above from line 130 to 176*/
+@keyframes around1{ 0%{top: 660px; right:0px; left: 815px;} 12.5%{top: 685px; right: 0px; left: 905px;}
+25%{top: 760px; right: 0px; left: 945px;} 37.5%{top: 835px; right: 0px; left: 905px;} 
+50%{top: 860px; right: 0px; left: 815px;}62.5%{top: 835px; right: 0px; left: 725px;} 
+75%{top: 760px; right: 0px; left: 685px;} 87.5%{top: 685px; right: 0px; left: 725px;}
+100%{top: 660px; right:0px; left: 815px;}}
+
+@keyframes around2{ 0%{top: 860px; right: 0px; left: 815px;} 12.5%{top: 835px; right: 0px; left: 725px;}
+25%{top: 760px; right: 0px; left: 685px;} 37.5%{top: 685px; right: 0px; left: 725px;}
+50%{top: 660px; right: 0px; left: 815px;} 62.5%{top: 685px; right: 0px; left: 905px}
+75%{top: 760px; right: 0px; left: 945px;} 87.5%{top: 835px; right: 0px; left: 905px;}
+100%{top: 860px; right: 0px; left: 815px;}}
+
+@keyframes around3{ 0%{top: 760px; right: 0px; left: 945px;} 12.5% {top: 835px; right: 0px; left: 905px;}
+25%{top: 860px; right: 0px; left: 815px;} 37.5%{top: 835px; right: 0px; left: 725px;}
+50%{top: 760px; right: 0px; left: 685px;} 62.5% {top: 685px; right: 0px; left: 725px;}
+75%{ top: 660px; right: 0px; left: 815px;} 87.5%{top: 685px; right: 0px; left: 905px;}
+100%{top: 760px; right: 0px; left: 945px;}}
+
+@keyframes around4{ 0%{top: 760px; right: 0px; left: 685px;} 12.5% {top: 685px; right: 0px; left: 725px;}
+25%{top: 660px; right: 0px; left: 815px;} 37.5% {top: 685px; right: 0px; left: 905px;}
+50%{top:760px; right: 0px; left: 945px;} 62.5%{top: 835px; right: 0px; left: 905px;}
+75%{top: 860px; right: 0px; left: 815px;} 87.5%{top: 835px; right: 0px; left: 725px;}
+100%{top: 760px; right: 0px; left: 685px;}}
+
+@keyframes around5{ 0%{top: 685px; right: 0px; left: 905px;} 12.5% {top: 760px; right: 0px; left: 945px; }
+25%{top: 835px; right: 0px; left: 905px;} 37.5% {top: 860px; right: 0px; left: 815px;}
+50%{top: 835px; right: 0px; left: 725px;} 62.5% {top: 760px; right: 0px; left: 685px;}
+75%{top: 685px; right: 0px; left: 725px;} 87.5%{top: 660px; right: 0px; left: 815px;}
+100%{top: 685px; right: 0px; left: 905px;}}
+
+@keyframes around6{ 0%{top: 835px; right: 0px; left: 725px;} 12.5%{top: 760px; right: 0px; left: 685px;}
+25%{top: 685px; right: 0px; left: 725px;} 37.5%{top: 660px; right: 0px; left: 815px;}
+50%{top: 685px; right: 0px; left: 905px;} 62.5%{top: 760px; right: 0px; left: 945px;}
+75%{top: 835px; right: 0px; left: 905px;} 87.5%{top: 860px; right: 0px; left: 815px;}
+100%{top: 835px; right: 0px; left: 725px;}}
+
+@keyframes around7{ 0%{top: 685px; right: 0px; left: 725px;} 12.5%{top: 660px; right: 0px; left: 815px;}
+25%{top: 685px; right: 0px; left: 905px;} 37.5%{ top: 760px; right: 0px; left: 945px;}
+50%{top: 835px; right: 0px; left: 905px;} 62.5%{top: 860px; right: 0px; left: 815px;}
+75%{top: 835px; right: 0px; left: 725px;} 87.5%{top: 760px; right: 0px; left: 685px;}
+100%{top: 685px; right: 0px; left: 725px;}}
+
+@keyframes around8{ 0%{top: 835px; right: 0px; left: 905px;} 12.5%{top: 860px; right: 0px; left: 815px;}
+25%{top: 835px; right: 0px; left: 725px;} 37.5%{top: 760px; right: 0px; left: 685px;}
+50%{top: 685px; right: 0px; left: 725px;} 62.5%{top: 660px; right: 0px; left: 815px;}
+75%{top: 685px; right: 0px; left: 905px;} 87.5%{top: 760px; right: 0px; left: 945px;}
+100%{top: 835px; right: 0px; left: 905px;}}
+
+/*the link class to ajust the font, the text and as well displaying the color when the cursor is the on the link text from
+line 180 to 184*/
+.link{text-indent: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px; text-transform: capitalize;}
+
+a {font-family: Verdana, Geneva, Tahoma, sans-serif; font-family: 14px; color: blue; position: relative;}
+
+a:hover {color: darkred; font-family: Verdana, Geneva, Tahoma, sans-serif; font-family: 14px; }
+
+/*the .list class is to ajust the font and the text as well*/
+.list {text-indent: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px;}
+
+/*the li and ol element is only to adjust the text and the height from line 190 to 192*/
+li {text-indent: 0px;}
+
+ol{ height: 75px; }
+
+/*the .preque class is to adjust the backgorund color, the position, the color, the text, and the border as well*/
+.preque{ background-color: lightgreen; height: 30px;  padding-top: 5px; margin-top: -14px; padding-left: 10px; margin-left: -10px;
+padding-right: 10px; margin-right: -10px; font-family: arial; color: red; font-size: 20px; text-align: center; border-top-style: solid; 
+border-top-color: black; text-transform: capitalize; }
+
+ /*using the #box ID is to display the flex column the align the "question" and "end" ID to display the background color, the border 
+ and as well as the text adjustment from line 195 to 234*/
+#box {display: flex; flex-direction: column;}
+
+#question-1 {background-color:  lightskyblue; margin-top: -20px;  text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-2 {background-color: lightpink; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-3 {background-color: lightskyblue; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-4 {background-color: lightpink; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-5 {background-color: lightskyblue; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-6 {background-color: lightpink; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-7 {background-color: lightskyblue; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-8 {background-color: lightpink; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-9 {background-color: lightskyblue; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#question-10 {background-color: lightpink; text-indent: 15px; border-top-style: solid;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+#end {background-color: lightpink; text-align: center; height: 300px; border-bottom-style: solid; padding-top: 80px;
+padding-left: 10px; margin-left: -10px; padding-right: 10px; margin-right: -10px;}
+
+/*the .results class is the display the background the color, the font  the border, and the postion alignment as well*/
+.results {background-color: lightgreen; font-size: 20px; text-align: center; font-family: arial; color: red; border-top-style: solid; border-top-color: black; 
+ margin-top: -20px; padding-bottom: 50px; margin-bottom: -50px; padding-left: 10px; margin-left: -10px;
+ padding-right: 10px; margin-right:-10px}
+ 
+/*the @media below is to display the tuturial project in a mobile phone and the only changes are mostly the size adjustments
+ from line 237 to 345*/
+ @media (min-width: 320px) and (max-width: 500px)
+{
+  /*the #button ID is to change the postion of the "About-us" and the "Contact-us" button IDs*/
+    #button{position: relative; left: 120px;}
+
+  /*the .welcome class is to ajust the position, font and the text alingment*/
+    .welcome {width: 400px; position: relative; left: 25px; font-family: Arial; font-size: 25px; color: red;
+    margin-top: 25px; margin-bottom: 30px; text-transform: capitalize;}
+
+    /*the .webdevpic, 1, 2, 3, adjust the flex margin and the postion as well from line 253 to 261*/ 
+    .webdevpic {display: flex; flex-direction: column; justify-content: center;}
+    
+    .webdevpic1 {position: relative; right: 100px; margin-bottom: 15px;}
+    .webdevpic1:hover {transform: scale(1.1);}
+
+
+    .webdevpic2 {position: relative; right: 100px;}
+    .webdevpic2:hover {transform: scale(1.1);}
+
+    .webdevpic3 {position: relative; left: -110px; margin-top: 15px;}
+    .webdevpic3:hover {transform: scale(1.1);}
+  
+  /*the h2 element is to ajust the background color, border, postion, font, and the text as well*/
+  h2 {width: 450px; background-color: rgba(238, 241, 41, 0.5); border-radius: 50px; padding: 10px; position: relative; left: 0px;
+  font-family: arial; color: red; font-size: 17px; text-transform: capitalize;}
+
+  hr {width: 400px;}
+
+    /*the classes below is to display the coding symbol and adjusting the position, width, height and the rest of
+its code as well for the mobile @media from line 269 to .webdevpic1 {position: absolute; left: 50px*/
+  .symbol-top{background-color: white; position: absolute; top: 1030px; right: 0px; left: 160px;  width:50px; height: 12.5px;
+transform: rotate(-15deg) skewX(-15deg) skewY(-15deg); animation-duration: 0.9s; animation-iteration-count: infinite; 
+animation-name: greater-than;}
+
+.symbol-bot {background-color: white; position: absolute; top: 1060px; right: 0px; left: 160px; width:50px; height: 12.5px; 
+transform: rotate(15deg) skewX(15deg) skewY(15deg); animation-duration: 0.9s; animation-iteration-count: infinite; 
+animation-name: greater-than2;}
+
+.symbol-mid {background-color: white; position: absolute; top: 1045px; right: 0px; left: 210px;  width:50px; height: 12.5px;
+transform: rotate(105deg) skewX(15deg) skewY(15deg); animation-duration: 1s; animation-iteration-count: infinite; 
+animation-name: forwardslash;}
+
+.symbol-top2 {background-color: white; position: absolute; top: 1030px; right: 0px; left: 260px;  width:50px; height: 12.5px;
+transform: rotate(15deg) skewX(15deg) skewY(15deg); animation-duration: 1.1s; animation-iteration-count: infinite; 
+animation-name: less-than;}
+
+.symbol-bot2 {background-color: white; position: absolute; top: 1060px; right: 0px; left: 260px; width:50px; height: 12.5px; 
+transform: rotate(-15deg) skewX(-15deg) skewY(-15deg); animation-duration: 1.1s; animation-iteration-count: infinite; 
+animation-name: less-than2;}
+ 
+ /*the space class position is more ajusted to the left for the mobile @media*/
+ /*left 30px + left 60px = left 90px  top 920 - top 10 = top 910*/
+.space {background-color: black; width: 300px; height: 300px; position: absolute; top: 910px; left: 90px; border-radius: 50%;}
+
+/*the .round and ball classes positions are more ajusted to the left for the mobile @media from line 282 to 291*/
+.round {width:25px; height: 25px; border-radius: 50%; animation-iteration-count: infinite; position: absolute; 
+animation-duration: 10s; animation-iteration-count: infinite; animation-timing-function: linear;}
+.ball1 {background-color: yellow; position: absolute; top: 945px; right: 0px; left: 225px; animation-name: around1;} 
+.ball2 {background-color: violet; position: absolute; top: 1145px; right: 0px; left: 225px; animation-name: around2;}
+.ball3 {background-color: teal; position: absolute; top: 1045px; right: 0px; left: 355px; animation-name: around3;}
+.ball4 {background-color: orangered; position: absolute; top: 1045px; right: 0px; left: 95px; animation-name: around4;}
+.ball5 {background-color: green;position: absolute; top: 970px; right: 0px; left: 322.5px; animation-name: around5;}
+.ball6 {background-color: red; position: absolute; top: 1120px; right: 0px; left: 127.5px; animation-name: around6;}
+.ball7 {background-color: orange; position: absolute; top: 970px; right: 0px; left: 127.5px; animation-name: around7;}
+.ball8 {background-color: blue; position: absolute; top: 1120px; right: 0px; left: 322.5px; animation-name: around8;}
+
+/*the @keyframe animation are more ajusted to the left for the mobile media from line 294 to 340*/
+@keyframes around1{ 0%{top: 945px; right: 0px; left: 225px;} 12.5%{top: 970px; right: 0px; left: 322.5px;}
+25%{top: 1045px; right: 0px; left: 355px;} 37.5%{top: 1120px; right: 0px; left: 322.5px;} 
+50%{top: 1145px; right: 0px; left: 225px;} 62.5%{top: 1120px; right: 0px; left: 127.5px;} 
+75%{top: 1045px; right: 0px; left: 95px;} 87.5%{top: 970px; right: 0px; left: 127.5px;}
+100%{top: 945px; right:0px; left: 225px;}}
+
+@keyframes around2{ 0%{top: 1145px; right: 0px; left: 225px;} 12.5%{top: 1120px; right: 0px; left: 127.5px;}
+25%{top: 1045px; right: 0px; left: 95px;} 37.5%{top: 970px; right: 0px; left: 127.5px;}
+50%{top: 945px; right: 0px; left: 225px;} 62.5%{top: 970px; right: 0px; left: 322.5px}
+75%{top: 1045px; right: 0px; left: 355px;} 87.5%{top: 1120px; right: 0px; left: 322.5px;}
+100%{top: 1145px; right: 0px; left: 225px;}}
+
+@keyframes around3{ 0%{top: 1045px; right: 0px; left: 355px;} 12.5% {top: 1120px; right: 0px; left: 322.5px;}
+25%{top: 1145px; right: 0px; left: 225px;} 37.5%{top: 1120px; right: 0px; left: 127.5px;}
+50%{top: 1045px; right: 0px; left: 95px;} 62.5% {top: 970px; right: 0px; left: 127.5px;}
+75%{ top: 945px; right: 0px; left: 225px;} 87.5%{top: 970px; right: 0px; left: 322.5px;}
+100%{top: 1045px; right: 0px; left: 355px;}}
+
+@keyframes around4{ 0%{top: 1045px; right: 0px; left: 95px;} 12.5% {top: 970px; right: 0px; left: 127.5px;}
+25%{top: 945px; right: 0px; left: 225px;} 37.5% {top: 970px; right: 0px; left: 322.5px;}
+50%{top: 1045px; right: 0px; left: 355px;} 62.5%{top: 1120px; right: 0px; left: 322.5px;}
+75%{top: 1145px; right: 0px; left: 225px;} 87.5%{top: 1120px; right: 0px; left: 127.5px;}
+100%{top: 1045px; right: 0px; left: 95px;}}
+
+@keyframes around5{ 0%{top: 970px; right: 0px; left: 322.5px;} 12.5% {top: 1045px; right: 0px; left: 355px; }
+25%{top: 1120px; right: 0px; left: 322.5px;} 37.5% {top: 1145px; right: 0px; left: 225px;}
+50%{top: 1120px; right: 0px; left: 127.5px;} 62.5% {top: 1045px; right: 0px; left: 95px;}
+75%{top: 970px; right: 0px; left: 127.5px;} 87.5%{top: 945px; right: 0px; left: 225px;}
+100%{top: 970px; right: 0px; left: 322.5px;}}
+
+@keyframes around6{ 0%{top: 1120px; right: 0px; left: 127.5px;} 12.5%{top: 1045px; right: 0px; left: 95px;}
+25%{top: 970px; right: 0px; left: 127.5px;} 37.5%{top: 945px; right: 0px; left: 225px;}
+50%{top: 970px; right: 0px; left: 322.5px;} 62.5%{top: 1045px; right: 0px; left: 355px;}
+75%{top: 1120px; right: 0px; left: 322.5px;} 87.5%{top: 1145px; right: 0px; left: 225px;}
+100%{top: 1120px; right: 0px; left: 127.5px;}}
+
+@keyframes around7{ 0%{top: 970px; right: 0px; left: 127.5px;} 12.5%{top: 945px; right: 0px; left: 225px;}
+25%{top: 970px; right: 0px; left: 322.5px;} 37.5%{ top: 1045px; right: 0px; left: 355px;}
+50%{top: 1120px; right: 0px; left: 322.5px;} 62.5%{top: 1145px; right: 0px; left: 225px;}
+75%{top: 1120px; right: 0px; left: 127.5px;} 87.5%{top: 1045px; right: 0px; left: 95px;}
+100%{top: 970px; right: 0px; left: 127.5px;}}
+
+@keyframes around8{ 0%{top: 1120px; right: 0px; left: 322.5px;} 12.5%{top: 1145px; right: 0px; left: 225px;}
+25%{top: 1120px; right: 0px; left: 127.5px;} 37.5%{top: 1045px; right: 0px; left: 95px;}
+50%{top: 970px; right: 0px; left: 127.5px;} 62.5%{top: 945px; right: 0px; left: 225px;}
+75%{top: 970px; right: 0px; left: 322.5px;} 87.5%{top: 1045px; right: 0px; left: 355px;}
+100%{top: 1120px; right: 0px; left: 322.5px;}}
+
+/*the member class is to ajust the position, font, and the text as well*/
+.member {position: relative; left: 15px; font-size: 17.5px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-transform: capitalize;
+margin-top: 300px;}
+  
+  /*the b4vid class is to ajust the font and the postion*/
+  .b4vid {font-size: 14px; font-family: Verdana; position: relative; top: 15px; left: 5px; text-transform: capitalize;}
+
+  /*the link class is to ajust the text, the postion and the font as well*/
+  .link {text-indent: 15px; margin-left: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14px;}
+
+  /*the preque class is to ajust the background color, the postiion, the font, the text, as well as the border*/
+  .preque{background-color: lightgreen; height: 60px; margin-top: -14px; font-family: arial; color: red; 
+font-size: 20px; text-align: center; border-top-style: solid; border-top-color: black; text-transform: capitalize;}
+
+/*the steps class is to adjust the text and the postion*/
+.steps {text-indent: 15px; margin-left: 0px;}
+}
+
+/*the @media below is to display the tutorial project in a tablet version and the only changes are mostly the size adjustments
+ fromm line 362 to 432*/
+@media (min-width: 501px) and (max-width: 1200px)
+{
+  /*the symbol classes are the same as the orignal one but the only the difference is that the tablet version is the position
+    is more adjusted to the bottom from line 366 to 376*/
+  .symbol-top {position: absolute; top: 945px;}
+
+  .symbol-bot {position: absolute; top: 975px;}
+
+  .symbol-mid {position: absolute; top: 960px;}
+
+  .symbol-top2 {position: absolute; top: 945px;}
+
+  .symbol-bot2 {position: absolute; top: 975px;}
+
+  .space {position: absolute; top: 825px;}
+
+  /*the .ball classes positions are more ajusted to the left and to the top for the tablet version from line 379 to 386*/
+  .ball1 {background-color: yellow; position: absolute; top: 860px; right: 0px; left: 815px; animation-name: around1;}   
+  .ball2 {background-color: violet; position: absolute; top: 1060px; right: 0px; left: 815px; animation-name: around2;}
+  .ball3 {background-color: teal; position: absolute; top: 960px; right: 0px; left: 945px; animation-name: around3;}
+  .ball4 {background-color: orangered; position: absolute; top: 960px; right: 0px; left: 685px; animation-name: around4;}
+  .ball5 {background-color: green;position: absolute; top: 885px; right: 0px; left: 905px; animation-name: around5;}
+  .ball6 {background-color: red; position: absolute; top: 1035px; right: 0px; left: 725px; animation-name: around6;}
+  .ball7 {background-color: orange; position: absolute; top: 885px; right: 0px; left: 725px; animation-name: around7;}
+  .ball8 {background-color: blue; position: absolute; top: 1035px; right: 0px; left: 905px; animation-name: around8;}
+
+  /*the @keyframe animation are more ajusted to the left and the top for the table version from line 389 to 436*/
+  @keyframes around1{ 0%{top: 860px; right:0px; left: 815px;} 12.5%{top: 885px; right: 0px; left: 905px;}
+25%{top: 960px; right: 0px; left: 945px;} 37.5%{top: 1035px; right: 0px; left: 905px;} 
+50%{top: 1060px; right: 0px; left: 815px;}62.5%{top: 1035px; right: 0px; left: 725px;} 
+75%{top: 960px; right: 0px; left: 685px;} 87.5%{top: 885px; right: 0px; left: 725px;}
+100%{top: 860px; right:0px; left: 815px;}}
+
+  @keyframes around2{ 0%{top: 1060px; right: 0px; left: 815px;} 12.5%{top: 1035px; right: 0px; left: 725px;}
+25%{top: 960px; right: 0px; left: 685px;} 37.5%{top: 885px; right: 0px; left: 725px;}
+50%{top: 860px; right: 0px; left: 815px;} 62.5%{top: 885px; right: 0px; left: 905px}
+75%{top: 960px; right: 0px; left: 945px;} 87.5%{top: 1035px; right: 0px; left: 905px;}
+100%{top: 1060px; right: 0px; left: 815px;}}
+
+  @keyframes around3{ 0%{top: 960px; right: 0px; left: 945px;} 12.5% {top: 1035px; right: 0px; left: 905px;}
+25%{top: 1060px; right: 0px; left: 815px;} 37.5%{top: 1035px; right: 0px; left: 725px;}
+50%{top: 960px; right: 0px; left: 685px;} 62.5% {top: 885px; right: 0px; left: 725px;}
+75%{ top: 860px; right: 0px; left: 815px;} 87.5%{top: 885px; right: 0px; left: 905px;}
+100%{top: 960px; right: 0px; left: 945px;}}
+
+  @keyframes around4{ 0%{top: 960px; right: 0px; left: 685px;} 12.5% {top: 885px; right: 0px; left: 725px;}
+25%{top: 860px; right: 0px; left: 815px;} 37.5% {top: 885px; right: 0px; left: 905px;}
+50%{top: 960px; right: 0px; left: 945px;} 62.5%{top: 1035px; right: 0px; left: 905px;}
+75%{top: 1060px; right: 0px; left: 815px;} 87.5%{top: 1035px; right: 0px; left: 725px;}
+100%{top: 960px; right: 0px; left: 685px;}}
+
+  @keyframes around5{ 0%{top: 885px; right: 0px; left: 905px;} 12.5% {top: 960px; right: 0px; left: 945px; }
+25%{top: 1035px; right: 0px; left: 905px;} 37.5% {top: 1060px; right: 0px; left: 815px;}
+50%{top: 1035px; right: 0px; left: 725px;} 62.5% {top: 960px; right: 0px; left: 685px;}
+75%{top: 885px; right: 0px; left: 725px;} 87.5%{top: 860px; right: 0px; left: 815px;}
+100%{top: 885px; right: 0px; left: 905px;}}
+
+  @keyframes around6{ 0%{top: 1035px; right: 0px; left: 725px;} 12.5%{top: 960px; right: 0px; left: 685px;}
+25%{top: 885px; right: 0px; left: 725px;} 37.5%{top: 860px; right: 0px; left: 815px;}
+50%{top: 885px; right: 0px; left: 905px;} 62.5%{top: 960px; right: 0px; left: 945px;}
+75%{top: 1035px; right: 0px; left: 905px;} 87.5%{top: 1060px; right: 0px; left: 815px;}
+100%{top: 1035px; right: 0px; left: 725px;}}
+
+  @keyframes around7{ 0%{top: 885px; right: 0px; left: 725px;} 12.5%{top: 860px; right: 0px; left: 815px;}
+25%{top: 885px; right: 0px; left: 905px;} 37.5%{ top: 960px; right: 0px; left: 945px;}
+50%{top: 1035px; right: 0px; left: 905px;} 62.5%{top: 1060px; right: 0px; left: 815px;}
+75%{top: 1035px; right: 0px; left: 725px;} 87.5%{top: 960px; right: 0px; left: 685px;}
+100%{top: 885px; right: 0px; left: 725px;}}
+
+  @keyframes around8{ 0%{top: 1035px; right: 0px; left: 905px;} 12.5%{top: 1060px; right: 0px; left: 815px;}
+25%{top: 1035px; right: 0px; left: 725px;} 37.5%{top: 960px; right: 0px; left: 685px;}
+50%{top: 885px; right: 0px; left: 725px;} 62.5%{top: 860px; right: 0px; left: 815px;}
+75%{top: 885px; right: 0px; left: 905px;} 87.5%{top: 960px; right: 0px; left: 945px;}
+100%{top: 1035px; right: 0px; left: 905px;}}
+
+  .welcome {width: 1000px; position: relative; left: 75px;}
+  
+  .webdevpic {width: 1000px; position: relative; left: 100px;}
+
+  h2 {width: 800px; position: relative; left: 175px;}
+
+  hr {width: 1000px; position: relative; left: 0px;}
+
+  .member {width: 700px;}
+  
+  .link {width: 575px;}
+
+  .steps {width: 500px;}
+
+  .preque {width: 1200px;}
+}
+/*end of css program*/
+</style>
+
+<body>
+<main class = "cool">
+
+<!--creating 2 buttons called "About Us" and "Contact Us" that will link the user to the another page from line 445 to 451-->
+<div id="button">
+  <a href="file:///H:/Computer%20programs/HTML%20FILES/Tutorial%20project%20about%20us.html" style="text-decoration:none" 
+  id= "about-us"><p>About Us</p></a>
+  
+  <a href="file:///H:/Computer%20programs/HTML%20FILES/Tutorial%20project%20contact%20page.html"
+   style="text-decoration:none" id= "contact-us"><p>Contact Us</p></a>
+</div>
+
+<!--creating an introduction to welcome the users-->
+<header>
+<h1 class = "welcome" > Welcome Users <br>Please read this before becoming a Web Developer</h1>
+</header>
+
+
+<!--getting 3 images address and pasting it below to display my tutorial project-->
+<div class= webdevpic>
+<img class= "webdevpic1" src = https://cdn.myanimelist.net/s/common/uploaded_files/1472514013-ddea489c327f20122445ee7ff8183144.jpeg> 
+
+<img class= "webdevpic2" 
+src = https://opensource.com/sites/default/files/styles/image-full-size/public/lead-images/keyboard_numbers_letters_type_game.jpg?>
+
+<img class= "webdevpic3" src = https://careerfoundry.com/en/blog/uploads/web_dev_pillar_page.jpg>
+</div>
+<!--telling the user to become a web developr and applying the 2nd heading-->
+<header>
+<h2> To become a <strong><em> <u>Web Developer</strong></em></u> you must first know basic coding and its concept.</h2>
+</header>
+<hr>
+<br>
+
+<!--telling the user to create an account and it will link to another page-->
+<p class="member"><strong> If you are a member please sign in, if not, 
+  <a href="file:///H:/Computer%20programs/HTML%20FILES/Tutorial%20project%20create%20account.html" style="text-decoration:none">
+    create new account</a>.</p></strong>
+  
+<!--creating an email address, password, and a login button for the user to login and link them to another page from line 480 to 492-->
+<div class="backgnd">
+<p class="Email">Email Address</p>
+<form action= "internet mail">
+<input  type="email" placeholder="example@hotmail.com" tabindex="1">
+
+<p class="pwd">Password</p>
+<form action= "Pword">
+<input  type= "password" placeholder="example123" tabindex="2">
+
+<form action= "proceed">
+<button class="login" type="value" > Log In </button>
+</form>
+</div>
+
+<!--inputing a source code from the youtube website and pasting it into the webstie to display it-->
+<P class="b4vid"><strong> Before becoming a Web Developer, Watch this Video</strong></P>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/8XcfXoDxUKM" frameborder="0" 
+allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+
+<!--creating classes to create a coding symbol picture and its animation as well from line 500 and 514-->
+<div class="space"></div>
+<div class="symbol-top"></div>
+<div class="symbol-bot"></div>
+<div class="symbol-mid"></div>
+<div class="symbol-top2"></div>
+<div class="symbol-bot2"></div>
+
+<div class="round ball1"></div>
+<div class="round ball2"></div>
+<div class="round ball3"></div>
+<div class="round ball4"></div>
+<div class="round ball5"></div>
+<div class="round ball6"></div>
+<div class="round ball7"></div>
+<div class="round ball8"></div>
+
+ <!--creating a link to direct the user to another website called w3schools-->
+<p class="link"><strong> Here is a link to the website if you want to <a href="https://www.w3schools.com/html" 
+  style="text-decoration:none">Learn how to code</a>.
+</strong></p>
+
+
+<!--creating an orderd list and an unorderd list to display how to becoming a web developer and the its steps from line 523 to 537-->
+<div class="list">
+<p>These are the skills you <strong>MUST</strong> have to be a Web Developer</p>
+<ul>
+    <li>Concentration</li>
+    <li>Creativity</li>
+    <li>Customer-service skills</li>
+    <li>Detail Oriented</li>
+</ul>
+  <p class="steps" >Before answering the survey questions You <strong>MUST</strong> follow these steps</P>
+  <ol>
+    <li>Read Carefully</li>
+    <li>Think</li>
+    <li>Answer</li>
+  </ol>
+</div>
+</main>
+
+<!-- this is telling the user to read befroe the reader answers questions below-->
+<div>
+   <p class= "preque" ><strong><em>If you think you are ready then get ready to answer these 10 survey questions</strong></em></p>
+</div>
+
+<!--creating a form for a checkbox, radio button and feildset
+ to help the users answer qustions and a radio button created from line 547 to 681-->
+<div id="box">
+<div class="questions">
+<div>
+<form action="/Que1" id = "question-1">
+<p> Question 1</p>
+<fieldset>
+<legend>Are you be willing to learn HTML?</legend>
+  <label><input value= "yes" type = "radio" name = "q1"> Yes <br></label>
+  <label><input value= "no" type = "radio" name = "q1"> No <br></label>
+  <label><input value= "maybe" type = "radio" name = "q1"> Maybe <br></label>
+  <label><input value= "don't know" type = "radio" name = "q1"> I do not know</label>
+</fieldset>
+  </form>
+</div>
+
+<div>
+<form action= "/Que2" id = "question-2">
+<P> Question 2</P>
+<fieldset>
+<legend>Are you willing to learn CSS?</legend>
+  <label><input value= "yes" type = "radio" name ="q2"> Yes <br></label>
+  <label><input value= "no" type = "radio" name ="q2"> No <br></label>
+  <label><input value= "maybe" type = "radio" name = "q2"> Maybe <br></label>
+  <label><input value= "don't know" type = "radio" name = "q2"> I do not know </label>
+</fieldset>  
+</form>
+</div>
+
+<div>
+<form action= "/Que3" id = "question-3">
+<p>Question 3</p>
+<fieldset>
+<legend>Are you willing to learn Javascript after you learn HTML and CSS?</legend>
+  <label><input value= "yes" type = "radio" name = "q3"> Yes <br> </label>
+  <label><input value= "no" type = "radio" name ="q3"> No <br></label>
+  <label><input value= "maybe" type = "radio" name = "q3"> Maybe <br></label>
+  <label><input value= "don't know" type = "radio" name = "q3"> I do not know </label>
+</fieldset>
+</form>
+</div>
+
+<div>
+<form action="/Que4" id = "question-4">
+<p>Question 4</p>
+<fieldset>
+<legend>Is there any other programming languages you would like to learn? </legend>
+  <label><input value= "java" type = "checkbox" name = "q4"> Java <br></label>
+  <label><input value= "python" type = "checkbox" name = "q4"> Python <br></label>
+  <label><input value= "c++" type = "checkbox" name = "q4"> C++ <br></label>
+  <label><input value= "php" type = "checkbox" name = "q4"> PHP <br></label>
+  <label><input value= "c#" type = "checkbox" name = "q4"> C# <br></label>
+  <label><input value= "sql" type = "checkbox" name = "q4"> SQL <br></label>
+  <label><input value= "ruby" type = "checkbox" name = "q4"> Ruby <br></label>
+  <label><input value= "don't know" type = "checkbox" name = "q4"> I do not know</label>
+</fieldset>
+  </form>
+</div>
+
+<div>
+<form action= "/Que5" id = "question-5">
+<p>Question 5</p>
+<fieldset>
+<legend>Are you willing to be sitting in the computer for a long periods of time?</legend>
+  <label><input value= "yes" type = "radio" name = "q5"> Yes <br></label>
+  <label><input value= "no" type = "radio" name = "q5"> No <br></label>
+  <label><input value= "maybe" type = "radio" name = "q5"> Maybe <br></label>
+  <label><input value= "don't know" type = "radio" name = "q5"> I do not know</label>
+</fieldset>
+  </form>
+</div>
+ 
+<div>
+<form action= "/Que6" id = "question-6">
+<p>Question 6</p>
+<fieldset>
+<legend>What is your purpose of becoming web developer?</legend>
+  <label><input value= "career future" type = "radio" name = "q6"> Knowlege to become a programmer/software developer in the future <br></label>
+  <label><input value= "bussiness" type = "radio" name = "q6"> Bussiness <br></label>
+  <label><input value= "hobby" type = "radio" name = "q6"> Hobby <br></label>
+  <label><input value= "all of the above" type = "radio" name = "q6"> All of the Above </label>
+</fieldset> 
+</form>
+</div>
+
+<div>
+<form action= "/Que7" id = "question-7">
+<p>Question 7</p>
+<fieldset>
+<legend>What do you enjoy using the PC besides programming?</legend>
+  <label><input value= "video games" type = "checkbox" name = "q7"> Video Games <br></label>
+  <label><input value= "music" type = "checkbox" name = "q7"> Music<br></label>
+  <label><input value= "watching videos" type = "checkbox" name = "q7"> Watching Videos<br></label>
+  <label><input value= "drawing" type = "checkbox" name = "q7"> Drawing<br></label>
+  <label><input value= "working" type = "checkbox" name = "q7"> Working<br></label>
+  <label><input value= "social media" type = "checkbox" name = "q7"> Social Media</label>
+</fieldset>
+  </form>
+</div>
+
+<div>
+<form action= "/Que8" id ="question-8">
+<p>Question 8</p>
+<fieldset>
+<legend> What method of education do you prefer learning as a web devloper?</legend>
+  <label><input value= "self-taught" type = "radio" name = "q8"> Self-taught <br></label>
+  <label><input value= "formal education" type = "radio" name = "q8"> Formal education</label>
+</fieldset>
+  </form>
+</div>
+
+<div>
+<form action ="/Que9" id = "question-9"> 
+<p>Question 9</p>
+<fieldset>
+<legend>If you got a job as a web developer, how would you prefer working?</legend>
+  <label><input value= "teamwork" type = "radio" name = "q9"> Teamwork <br></label>
+  <label><input value= "alone" type = "radio" name = "q9"> Alone<br></label>
+  <label><input value= "remote at home" type = "radio" name = "q9"> Remote at Home</label>
+</fieldset>
+  </form>
+</div>
+
+
+<form action= "/Que10" id = "question-10">
+<p>Question 10</p>
+<fieldset>
+<legend>Please give a rating of what you think of the survey questions above.</legend>
+  <label><input value= "outstanding" type = "radio" name = "q10"> Outstanding <br></label>
+  <label><input value= "good" type = "radio" name = "q10"> It's Good <br></label>
+  <label><input value= "ok" type = "radio" name = "q10"> It's OK <br></label>
+  <label><input value= "some work" type = "radio" name = "q10"> Could use some work <br></label>
+  <label><input value= "needs work" type = "radio" name = "q10"> It definitely needs work </label>
+</fieldset>
+</form>
+</div>
+
+<!--created a submit button for the user to click it and link them to another page-->
+<form action="end-work" id = "end">
+<input type = "submit">
+</form>
+</div>
+
+
+
+<!--here below is to display the results of the survey-->
+<br><div>
+<p class="results"><strong>Now that you answered the survey question we provided to you, 
+we are sorry to inform you that we cannot give you the results until further
+notice. Thank you for your patience and answering the questions and Have a nice day.</strong></p>
+</div>
+</body>
+
+<!--here is the end of the html program-->
+</html>

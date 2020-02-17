@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>www.WebDevTutorials.com/contactus</title>
+
+<style>
+    /*the .centralbox dipslays the flex and width*/
+    .centeralbox {display: flex; flex-direction: column; width: 1125px;}
+    
+    /*the .box1  class is to display the background imaage into a linear gradient, height, width and the margin as well*/
+    .box1 {background-image: linear-gradient( 195deg, orange, lightgreen, hsl(200, 100%, 50%)); height: 400px; width: 1350.5px;
+    margin: -8.75px -8.75px 0px -8.75px;}
+    
+    /*the .home class is to adjust the text, position, font color and hovers whenever the user points the cursor to the
+    home button from line 16 to 17*/
+    .home {text-align: center; position: relative; right: 20px; font-size: 30px; font-family: Arial, Helvetica, sans-serif; color:crimson;}
+    .home:hover {color: blue;}
+
+    /*the h1 element class is to adjust the text and the font*/ 
+    h1 {text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 37.5px; color: crimson; font-weight: bolder;}
+
+    /*the pics and pics1 classes is to adjust the flex, width, height, bprder and as well as the postion from line
+    24 to 25*/
+    .pics {display: flex; justify-content: center;}
+    .pic1 {width: 300px; height: 200px; border-radius: 5px; position: relative; right: 10px;}
+
+    /*the .box2 class is to display thje height, background, margin padding and the width as well*/
+    .box2 {height: 700px; background-image: linear-gradient(-45deg, hsl(200, 100%, 50%), lightsalmon, orange);
+    margin: 0px -8.75px -8.75px -8.75px; padding: 0px 10px 10px 10px; width: 1330.5px;} 
+
+    /*the h2 element is to adjust the text and font*/
+    h2 {text-align: center; color: darkgreen; font-family: Arial, Helvetica, sans-serif; font-size: 27.5px;}
+
+    /*the .team class is to adjust the background, position, width, height, padding, border text and the font as well*/
+    .team {background-color: lightgreen; position: relative; left: 500px; width: 350px; height: 150px; padding-top: 15px;
+    border-radius: 10px; text-align: center; color: darkgreen; font-family: Arial, Helvetica, sans-serif; font-size: 27.5px;}
+
+    /*the media below is to display in a mobile device from line 39 to 50*/
+    @media (max-width: 500px) and (min-width: 320px)
+    {
+        /* body element is to hide the x-scroll button*/
+        body {overflow-x: hidden;}
+
+        /*the  classes and IDs is to adjust the posistion and the width from line 45 to 49*/
+        .home {position: relative; left: 0px;}
+        h1 {position: relative; right: 435px;}
+        .pic1 {position: relative; right: 440px;}
+        h2 {width: 450px; position: relative; left: 0px;}
+        .team {position: relative; bottom: 30px; left: 55px;}
+    }
+
+    /*the @media below is to display in a tablet device from line 53 to 64*/
+   @media (min-width: 501px) and (max-width: 1024px)
+   {
+       /*the body element is to hide the x_scroll button*/
+       body{overflow-x: hidden;}
+
+        /*the  classes and IDs is to adjust the posistion and the width from line 59 to 64*/
+       .home {position: relative; right: 0px;}
+       h1 {position: relative; right: 200px;}
+       .pic1 {position: relative; right: 200px;}
+        h2 {width: 825px; position: relative; left: 50px;}
+        .team {position: relative; top: -20px; left: 300px;}
+   }
+</style>
+
+<body>
+
+<!--declaring a variable and displaying box1 and box2 classes-->
+<div class="centeralbox">
+
+<!--decalring a variable and creating link for user be able to click to another webpage-->
+<header class="box1">
+<h2><a href="file:///H:/Computer%20programs/HTML%20FILES/Tutorial%20project.html" class="home">Home</a></h2>
+
+<!--providing information and displaying an image below-->
+<h1>About WebDevTutorials</h1>
+<div class="pics">
+<img src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png" class= "pic1">
+</div>
+</header>
+
+<!--declaring variables, class and using break line and providing information using the h2 element from line 84 to 89-->
+<main class="box2">
+    <br>
+<h2> WebDevTutorials is a website to learn the basics of web devleopment, how it works, how its used properly. With W3schools 
+    on our side, we can help the user to learn as much as they can, whether you want to learn it for personal use or to start a 
+    bussiness, either way WebDevTutorials here is here to help. </h2>
+    <br><br>
+
+<!--declaring variables, class, and using the break line to provide better structure-->
+<h2 class="team">List of the Team<br> Members:
+<br><br>
+Denzel Gomez
+</h2>
+</main>
+</div>
+
+</body>
+
+<!--end of program-->
+</html>

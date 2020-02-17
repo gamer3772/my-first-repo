@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type= "text/css" href="mystyle.css">
+<title>
+    www.https//WebDevTutorials/createaccount.org
+</title>
+
+<style>
+
+/*the backgorund element is to create and display url background*/
+body{
+    background: url(https://www.maxpixel.net/static/photo/1x/Disc-Frosted-Glass-Pattern-Background-Color-3185014.jpg);
+padding-bottom: 70px; overflow-x: hidden; }
+
+/*the .home class is to adjust the backgorund, width, height, border, position, font and helps it hover when cursor is on 
+home button form line 17 to 22*/
+.home {background-color: whitesmoke; width: 75px; height: 30px; border-radius: 7.5px; position: relative; left: 600px; top: 25px;
+padding: 10px 10px 10px 10px;
+font-family: Arial, Helvetica, sans-serif; text-align: center; color: rgba(0, 110, 255, 0.849); font-size: 23.5px;
+font-weight: bolder;}
+
+.home:hover {color: whitesmoke;}
+
+/*the centralbox class displays the flex and controls the other classes from line 25 to 79*/
+.centralbox{display: flex; flex-direction: column; width: 1333px; height: 1050px;}
+
+/*the .topinfo class is to adjust the positon, width, height, border, font, text and to display the background*/
+.topinfo {position: relative; left: 167px; top: 0px; background-color: rgb(16, 188, 231); text-align: center; 
+text-transform: capitalize; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px; margin-top: 2.5em;  
+width: 1000px; height: 40px; margin-bottom: -0.5px; border-top: 20px; border-radius: 20px 20px 0px 0px;}
+
+/*the .middlebox class is to dipslay the radial-gradient background and to ajust the width, height and margin*/
+.middlebox {background: radial-gradient( white, lightblue, skyblue); width: 1000px; height: 900px; margin: auto;}
+
+/*the .personalinfo class is to display the background linear gradient, ajdusting the width, height, border, position, font and
+text as well*/
+.personalinfo {background: linear-gradient(45deg, slateblue, crimson); width: 500px; height: 600px; border-radius: 20px; margin: auto; 
+position: relative; top: 50px; padding-top: 50px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px; font-weight: bolder; 
+text-align: center; color: white;}
+
+/*these classes below displays the background color, adjust the position, border, font from line 42 to 63*/
+.first {background-color: slateblue; padding: 5px 5px 5px 5px; border-radius: 5px; border-style: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; color: white;}
+
+.last {background-color: slateblue; padding: 5px 5px 5px 5px; border-radius: 5px; border-style: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; color: white;}
+
+.email {background-color: slateblue; padding: 5px 5px 5px 5px; border-radius: 5px; border-style: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; color: white;}
+
+::placeholder { color: white; opacity: 0.7;}
+
+.pwd {background-color: slateblue; padding: 5px 5px 5px 5px; border-radius: 5px; border-style: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; color: white;}
+
+.cmpwd {background-color: slateblue; padding: 5px 5px 5px 5px; border-radius: 5px; border-style: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; color: white;}
+
+.fb {background-color: #3B5998; color: white; border-radius: 5px; padding: 5px 5px 5px 5px;}
+
+.twitter {background-color: #55ACEE; color: white; border-radius: 5px; padding: 5px 5x 5px 5px;}
+
+.google {background-color: #dd4b39; color: white; border-radius: 5px; padding: 5px 5px 5px 5px;}
+
+/*the #check ID and .check class is to adjust the text, font, width and height from line 66 to 68*/
+#check {position: relative; top: 95px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+
+.chek {width: 15px; height: 15px;}
+
+/*the account class is to display the background color, ajdust the position, font, and the border as well from
+line 72 to 75*/
+.account {position: relative; top: 125px; left: 430px; background-color: crimson; color: white; 
+border-radius: 10px; padding: 10px 10px 10px 10px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;}
+
+a:hover {background-color: slateblue;}
+
+/*the .bottom class is to diplay the background color, the position, width, height and the border as well*/
+.bottom {background-color: rgb(16, 188, 231); position: relative; top: 0px; left: 167px; width: 1000px; 
+height: 40px; margin-bottom: -0.5px; border-top: 20px; border-radius: 0px 0px 20px 20px;}
+
+/*the @media below is to display the tutorial project in a mobile phone and the only changes are mostly the size adjustments
+ from line 80 to 98*/
+@media (min-width: 320px) and (max-width: 500px) 
+{
+  /*the .home class is to adjust the position, width, height, and the font as well*/
+  .home {position: relative; left: 192.5px; top: 30px; 
+  width: 37.5px; height: 15px; padding: 7.5px 7.5px 7.5px 7.5px; font-size: 20.5px;}
+  
+  /*the centralbox class controls the other classes from line 90 to 111*/
+  .centralbox {position: relative; top: 110px; left: -5px;}
+
+  /*the .topinfo class is to adjust the position, width, height and the font as well*/
+  .topinfo {position: relative; top: -94.85px; left: 65.5px; width: 350px; height: 47.5px; font-size: 18.75px;}
+
+  /*the middlebox class is to adjust the width, height and the position as well*/
+  .middlebox {position: relative; top: 0px; left: 67px; width: 350px; height: 800px; position: absolute; left: 65.5px; }
+  
+  /*the personalinfo class is to ajusth the width, position, and the font as well*/
+  .personalinfo {width: 350px; height: 500px; position: relative; left: 50x; top: 25px;  font-size: 14.5px; font-weight: bolder;}
+
+  /*these .cmpwd class is to adjust the font*/
+  .cmpwd {font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 14.3px;}
+
+  /*the #check ID is to adjust the position*/
+  #check {position: relative; top: 55px;}
+
+  /*the account position is to adjust the position*/ 
+  .account {position: relative; top: 75px; left: 110px;}
+
+  /*the .bottom clas is to adjust the position and the width*/
+  .bottom {position: relative; top: 706.62px; left: 66px; width: 350px;}
+}
+
+/*the @media below is to display the "tutorial project create account" in a tablet 
+version and the only changes are mostly the size adjustments fromm line 116 to 129*/
+@media (min-width: 501px) and (max-width: 1024px) 
+{
+  /*the .home class is to adjust the position*/
+  .home {position: relative; left: 425px;}
+  
+  /*the .topinfo class is to ajust the position, font, and the text as well*/
+  .topinfo {width: 750px; position: relative; top: 6.5px; left: 106.25px; font-size: 22.5px; border-color: red; }
+
+  /*the middlebox class is to adjust the position*/
+  .middlebox {width: 750px; position: relative; right: 185.5px;}
+
+  .account {position: relative; left: 325px;}
+
+  .bottom {width: 750px; position: relative; top: -7.5px; left: 106.25px;}
+}
+/*end of the css program*/
+</style>
+
+<body>
+
+  <!--This helps the user to click back to the tutorial project home page-->
+<a href="file:///H:/Computer%20programs/HTML%20FILES/Tutorial%20project.html" class="home" style="text-decoration: none">Home</a>
+
+<!--declaring a variable-->
+<div class="centralbox">
+
+<!--This displays the informartion for the user to create an acoount-->
+<header>
+    <h1 class="topinfo"> to create an account please type the inforation below</h1>
+</header>
+
+<!--here is the to declare variables to do changes in the css-->
+<main class="middlebox">
+<div class="personalinfo">
+
+  <!--creating forms that helps the user to type their name, email, password, 
+    and to confirm thier password from line 153 to 178-->
+<form  action="First name" id="first">
+    First name<br> <input type= "text" class="first" name="first">
+</form>
+<br>
+
+<form  action="Last name" id="last">
+        Last name <br>
+        <input type= "text" class="last" name="last">
+</form>
+<br>
+
+<form action="internet mail" id="emailaddress">
+Email address <br>
+<input type = "email"  class= "email" name= "emailaddress">
+</form>
+<br>
+
+<form action= "password" id= "pword">
+Password <br><input type = "password" class="pwd" name= "pword">
+</form>
+<br>
+
+<form action= "password" id= "cmpword">
+ Confirm Password <br>
+ <input type = "password" class="cmpwd" name= "cmpword">
+</form>
+
+<!--here is only to display the facebook, twitter, and google+ accounts which does not link to another page
+from lines 182 to 195-->
+<p>Or Continue With</p>
+
+    <a href="#" class="fb btn">
+      <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+    </a>
+    <br><br>
+    <a href="#" class="twitter btn">
+      <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+    </a>
+    <br><br>
+    <a href="#" class="google btn">
+      <i class="fa fa-google fa-fw"></i> Login with Google+
+    </a>
+</div>
+
+<!--creating a checkbox and link button to let the user agree and to create account which will link them to another page
+ from line 199 to 203-->
+<form action= "user" id ="check">
+<input type= "checkbox" class="chek" name="check">By checking the box and clicking "Create Account", <br>
+you agre to our Terms of Use and our Privacy Policy. <br>
+ou may receive emails from us and can opt out at any time.
+</form>
+
+<footer>
+  <a href="file:///H:/Computer%20programs/HTML%20FILES/future%20page.html" style= "text-decoration:none" class="account">Create Account
+    </a>
+</footer>
+</main>
+
+<div class="bottom"></div>
+</div>
+</body>
+<!--end of html program-->
+</html>
